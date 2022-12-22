@@ -1,20 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
-import Swiper from 'swiper';
-import {
-	Navigation,
-	EffectFade
-} from 'swiper';
-import tabs from './modules/tabs.js';
-import select from './modules/select.js';
-import faq from './modules/faq.js';
-import smoothScroll from './modules/smooth-scroll.js';
 import AOS from 'aos';
-import lax from 'lax.js'
-// import * as PIXI from 'pixi.js'
-// import {KawaseBlurFilter} from '@pixi/filter-kawase-blur';
-// import SimplexNoise from 'simplex-noise';
-// import hsl from "https://cdn.skypack.dev/hsl-to-hex";
-// import { debounce } from "debounce";
 
 flsFunctions.isWebp();
 
@@ -39,4 +24,3 @@ AOS.init({
 	mirror: false, // whether elements should animate out while scrolling past them
 	anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
-

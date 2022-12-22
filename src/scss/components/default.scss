@@ -2,12 +2,12 @@ body {
   overflow-x: hidden;
   position: relative;
   color: $white;
-  background: #1a1919;
+  background: #1D1D1D;
   max-height: 100vh;
   height: 100%;
 
-  font-family: Gilroy, sans-serif;
-  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -38,20 +38,105 @@ button {
 
 .h1 {
   font-size: 20px;
+  font-weight: 400;
+  color: #D3DAE2;
 }
 
 .text {
-  font-size: 40px;
+  font-size: 70px;
+  color: #6844FF;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  @media($media_md) {
+    font-size: 50px;
+  }
+
+  @media($media_sm) {
+    font-size: 40px;
+  }
+
+  @media(max-width: 450px) {
+    font-size: 34px;
+  }
+
+  @media(max-width: 400px) {
+    font-size: 30px;
+  }
 }
 
 .subtitle {
   font-size: 25px;
+  line-height: 150%;
+
+  @media($media_md2) {
+    font-size: 20px;
+  }
+
+  @media($media_sm2) {
+    font-size: 18px;
+  }
 }
 
 .button {
   font-size: 20px;
+  background: #6844FF;
+  border-radius: 15px;
+  padding: 20px 30px;
+
+  span {
+    font-size: 14px;
+  }
+
+  b {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  transition: all .2s;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 35px 8px rgba(104, 68, 255, 0.2);
+    -moz-box-shadow: 0px 0px 35px 8px rgba(104, 68, 255, 0.2);
+    box-shadow: 0px 0px 35px 8px rgba(104, 68, 255, 0.2);
+  }
+
+  @media($media_sm) {
+    padding: 15px 20px;
+
+    span {
+      font-size: 12px;
+      display: inline-block;
+      line-height: 1.2;
+      margin-top: 10px;
+    }
+
+    b {
+      font-size: 18px;
+    }
+  }
 }
 
 .bottom-text {
   font-size: 15px;
+  color: #D3DAE2;
+  padding-bottom: 30px;
+}
+
+.main {
+  padding: 50px 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media($media_md) {
+    justify-content: flex-start;
+    padding-top: 100px;
+  }
 }
